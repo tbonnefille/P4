@@ -7,6 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*corrections proposées*/
 
 .citation {
 
@@ -19,6 +20,13 @@ body {
     color: #F3976C;
 }
 
+.photo {
+    height: auto;
+    width: 100%;
+  }
+
+
+  /*fin*/
 a,
 button {
     transition: all .3s ease-in-out;
@@ -875,13 +883,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -903,8 +911,9 @@ h4 {
     }
 
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+
+        padding: 0px 20px;
+       
     }
 
     .bloc-group,
@@ -916,8 +925,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        
     }
 }
 
